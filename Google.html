@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>GOOGLE PAGE</title>
+
+<style>
+ .main {
+    min-height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 70px 70px 250px;
+    grid-template-areas: 
+    ". logo ."
+    ". search ."
+    ". flexbox ."
+    ". google-text .";
+}
+
+ .logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+ .search {
+    grid-area: search;
+    height: 20px;
+    width: 150%;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+ .search:focus:focus {
+    box-shadow: 1px 1px 5px grey;
+}
+ .search:hover:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+
+ .flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+ .google-search-btn {
+    border: none;
+    font-size: 13px;
+    color: green;
+    margin-right: 25px;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+}
+ .random-search-btn {
+    border: none;
+    font-size: 13px;
+    color: green;
+    padding: 7px 15px 7px 15px;
+    border-radius: 2px;
+}
+
+</style>
+
+</head>
+<body>
+    
+    <div class ="main">
+        <a href="." class ="logo"><img src="logo.png"></a>
+        <input type="text" class ="search">
+        <div class ="flexbox">
+            <button class ="google-search-btn" >Google Search</button><button class ="random-search-btn"> I'm feeling lucky</button>
+        </div>
+    </div>
+    
+</body>
+</html>
